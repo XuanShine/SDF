@@ -1,0 +1,24 @@
+Version 2 de SDF.
+
+Amélioration et compaction du code:
+En implémentant lagrange, cela m'a permis d'éviter de programmer la trajectoire de chaque son, d'autant plus que il y a maintenant 24 sons.
+Lagrange permet aussi des trajectoires différents pour la même note.
+
+Génération du son avec piano-tone, ce qui permet d'éviter de charger chaque son. Cependant, le rendu est moins bon qu'avec un enregistrement je trouve. (À améliorer)
+
+Fonctions modifiées: add-note, jouer-son
+Beaucoup de fonctions ont été supprimées car inutiles: mappe no-void etc...
+
+Possibilité de modifier les constantes du logiciel lors de la lecture des partitions pour (par exemple) modifier les pulsations par minutes. (Mais mal implémenté encore).
+
+ATTENTION: les partitions n'utilisent plus des procédures, mais des symboles pour les notes.
+
+touche "k": Fur Elise
+
+Amélioration à venir:
+- Amélioration des sons
+- Implémetation total de la possibilité de changer des paramètres du logiciel en cours de lecture de partition.
+- Changement possible de l'animation
+- Lecture des fichiers MIDI (si je trouve comment on fait avec racket)
+
+
